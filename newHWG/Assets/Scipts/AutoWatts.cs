@@ -9,6 +9,7 @@ public class AutoWatts: MonoBehaviour
     public int InternalIncrease;
 
     void Update() {
+        WattIncrease = GlobalAuto.runnerPerSec;
         InternalIncrease = WattIncrease;
         if (CreatingWatt == false){
             CreatingWatt = true;
